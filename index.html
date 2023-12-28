@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="title">Tic Tac Toe</h1>
+        <div class="block-step">
+          <p class="text-step">
+            It's a <span class="span-step" id="span-step"></span>'s turn
+          </p>
+        </div>
+        <div class="game-area" id="game-area">
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+          <div class="game-item"></div>
+        </div>
+        <div class="block-win" id="block-win">
+          <p class="text-win">
+            Winner: <span class="span-win" id="span-win"></span>
+          </p>
+          <button class="restart" id="restart">Restart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

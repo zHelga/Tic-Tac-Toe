@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1;
+}
+.wrapper {
+	background-color: #E9C46A;
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	max-width: 500px;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+
+	padding: 30px;
+}
+.title {
+	color: #9B5DE5;
+	font-size: 30px;
+}
+.block-step {
+}
+.text-step {
+	font-size: 20px;
+	font-weight: 500;
+}
+.span-step {
+	font-weight: 700;
+}
+.game-area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+.game-item {
+	width: 80px;
+	height: 80px;
+	box-shadow: 5px 5px 5px rgba(231, 111, 81, 0.801);
+	border-radius: 10px;
+	background-color: #E76F51;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.game-item:hover {
+	background-color: #f88f75;
+	box-shadow: 5px 5px 5px rgba(248, 143, 117, 0.801);
+}
+.game-item:active {
+	transform: scale(0.9);
+}
+.item-winner {
+	background-color: #d32d04;
+}
+.cross,
+.circle {
+	font-size: 30px;
+	font-weight: 700;
+}
+.cross {
+	color: #264653;
+}
+.circle {
+	color: #efb366;
+}
+.block-win {
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+}
+.text-win {
+	font-size: 18px;
+	font-weight: 500;
+}
+.span-win {
+	font-weight: 700;
+}
+.restart {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #2A9D8F;
+	border: 1px solid #2A9D8F;
+	box-shadow: 5px 5px 5px rgba(42, 157, 144, 0.615);
+
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+	transition: all .3s ease;
+}
+.restart:hover {
+	background-color: #29c0ae;
+	text-decoration: underline;
+}
+.restart:active {
+	transform: scale(0.9);
+}
